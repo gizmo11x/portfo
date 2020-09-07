@@ -10,7 +10,17 @@ def my_home():
     # !!!!!!!! https://flask.palletsprojects.com/en/1.1.x/quickstart/
 # activating the virtual environment we created: venv\Scripts\activate
 # in the console(powershell) we need to run these 2 commands every time: $env:FLASK_APP = "server.py" and flask run
-
+# deactivate with "deactivate"
+#
+# UPLOADING TO GITHUB
+# from github seelct https clone and run in the terminal (not venv): git clone https://github.com/gizmo11x/portfo.git
+# copy the critical files needed only (everything not related to the virtual env)
+# pip freeze > requirments.txt
+# deactivate
+# go to portfo folder: cd..
+# git add .
+# git commit -m"my portfolio website"
+# git push origin master
 
 # dinamically so we don't have to do approute for every page
 @app.route('/<string:page_name>')
